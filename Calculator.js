@@ -51,6 +51,6 @@ class Calculator {
      * @return {number}
      */
     getResult() {
-
+       return this.value;
     }
 }
