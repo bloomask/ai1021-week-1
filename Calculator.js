@@ -27,7 +27,8 @@ class Calculator {
      * @return {Calculator}
      */
     multiply(value) {
-
+        this.value *= value;
+        return this;
     }
 
     /**
