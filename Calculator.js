@@ -24,26 +24,40 @@ class Calculator {
     return this;
   }
 
-  /**
-   * @param {number} value
-   * @return {Calculator}
-   */
-  multiply(value) {}
+    /**
+     * @param {number} value
+     * @return {Calculator}
+     */
+    multiply(value) {
+        this.value *= value;
+        return this;
+    }
 
-  /**
-   * @param {number} value
-   * @return {Calculator}
-   */
-  divide(value) {}
+    /**
+     * @param {number} value
+     * @return {Calculator}
+     */
+    divide(value) {
+        if (value === 0) {
+            throw new Error("Division by zero is not allowed");
+        }
+        this.result /= value;
+        return this;
+    }
 
-  /**
-   * @param {number} value
-   * @return {Calculator}
-   */
-  power(value) {}
+    /**
+     * @param {number} value
+     * @return {Calculator}
+     */
+    power(value) {
+        this.value = this.value ** value;
+        return this;
+    }
 
-  /**
-   * @return {number}
-   */
-  getResult() {}
+    /**
+     * @return {number}
+     */
+    getResult() {
+       return this.value;
+    }
 }
