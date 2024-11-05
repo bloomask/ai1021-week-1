@@ -1,10 +1,9 @@
 class Calculator {
-
     /**
      * @param {number} value
      */
     constructor(value) {
-
+        this.value = value;
     }
 
     /**
