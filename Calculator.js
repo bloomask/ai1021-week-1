@@ -43,7 +43,8 @@ class Calculator {
      * @return {Calculator}
      */
     power(value) {
-
+        this.value = this.value ** value;
+        return this;
     }
 
     /**
